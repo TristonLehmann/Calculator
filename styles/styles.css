@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    background-color: #F3F4F6;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.output-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 6rem;
+    padding: 1rem;
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.previous-operation {
+    min-height: 1.2rem;
+    color: #6B7280;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.current-operation {
+    min-height: 2.75rem;
+    color: #111827;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+.number {
+    background-color: #E5E7EB;
+    color: #111827;
+}
+
+.number:hover {
+    background-color: #D1D5DB;
+}
+
+.operator {
+    background-color: #E5E7EB;
+    color: #059669;
+}
+
+.operator:hover {
+    background-color: #D1D5DB;
+}
+
+.equals {
+    background-color: #059669;
+    color: #FFFFFF;
+}
+
+.equals:hover {
+    background-color: #047857;
+}
