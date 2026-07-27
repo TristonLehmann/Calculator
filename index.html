@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"/>
+        <link rel="stylesheet" href="./styles/reset.css"/>
+        <link rel="stylesheet" href="./styles/styles.css"/>
+        <script src="./scripts/index.js" defer></script>
+        <script src="https://kit.fontawesome.com/eeffb10795.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <div class="output-area" aria-label="Calculator display" role="status">
+                <output class="previous-operation"></output>
+                <output class="current-operation"></output>
+            </div>
+            <div class="buttons">
+                <button type="button" class="operator" aria-label="All Clear" data-action="all-clear">AC</button>
+                <button type="button" class="operator" aria-label="Delete" data-action="delete"><i class="fa-solid fa-delete-left"></i></button>
+                <button type="button" class="operator" aria-label="Percent" data-action="percent">%</button>
+                <button type="button" class="operator" aria-label="Divide" data-action="divide">&#247;</button>
+                <button type="button" class="number" data-value="7">7</button>
+                <button type="button" class="number" data-value="8">8</button>
+                <button type="button" class="number" data-value="9">9</button>
+                <button type="button" class="operator" aria-label="Multiply" data-action="multiply">&#215;</button>
+                <button type="button" class="number" data-value="4">4</button>
+                <button type="button" class="number" data-value="5">5</button>
+                <button type="button" class="number" data-value="6">6</button>
+                <button type="button" class="operator" data-action="subtract">-</button>
+                <button type="button" class="number" data-value="1">1</button>
+                <button type="button" class="number" data-value="2">2</button>
+                <button type="button" class="number" data-value="3">3</button>
+                <button type="button" class="operator" data-action="add">+</button>
+                <button type="button" class="number" data-value="0">0</button>
+                <button type="button" class="number" data-value=".">.</button>
+                <button type="button" class="operator" aria-label="Toggle Sign" data-action="toggle-sign">&#177;</button>
+                <button type="button" class="equals" data-action="equals">=</button>
+            </div>
+        </main>
+    </body>
+</html>
